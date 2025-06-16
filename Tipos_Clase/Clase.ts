@@ -1,25 +1,25 @@
-export class Persona1 {
-    public name: string; //es accesible desde cualquier parte
-    public age: number; // accesible desde la clase y sus subclases
-    private isDeveloper: boolean; // accesible solo desde la clase
+export class Persona12 {
+    public nombre: string; // Public: accesible desde cualquier parte
+    public edad: number; // Protected: accessible desde la clase y sus subclases
+    private esDesarrollador: boolean; // Private: accessible solo desde la clase
 
-    constructor(name: string, age: number, isDeveloper: boolean) {
-        this.name = name
-        this.age = age
-        this.isDeveloper = isDeveloper
+    constructor(nombre: string, edad: number, esDesarrollador: boolean) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.esDesarrollador = esDesarrollador;
     }
 
-    public great(): string {
-        
-        return `Hola, mi nombre es: ${this.name}, y tengo ${this.age} años`;
+    public saludar(): string { // Public method
+        this.esDev
+        return `Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`;
     }
 
-    public getAge(): number {
-        return this.age
+    public obtenerEdad(): number { // Protected method
+        return this.edad;
     }
 
-    private isDev(): boolean {
-        return this.isDeveloper
+    private esDev(): boolean { // Private method
+        return this.esDesarrollador;
     }
+
 }
-
