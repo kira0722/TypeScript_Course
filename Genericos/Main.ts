@@ -30,4 +30,7 @@ console.log("contenido boolean; ", cajaBoolean.obtenerContenido());
 let cajaNumber = new Caja<number>(21)
 console.log("caja number: ", cajaNumber.obtenerContenido());
 
-let objeto1 = []
+let obj1: string[] = ["carlitos", "pedrito", "sancho"]
+
+let cajaObj = new Caja<[string[]]>([obj1])
+console.log("Caja objeto: ", cajaObj);
