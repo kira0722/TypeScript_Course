@@ -12,4 +12,4 @@ function obtenerLength <T extends { length: number}> (obj: T): number {
 obtenerLength("hola")
 obtenerLength([1, 2, 3, 4, 5])
 
-console.log(obtenerLength(42));
+// console.log(obtenerLength(42)); // no se puede manejar ya que el tipo de dato numerico, no tiene la propiedad length, por lo cual no se puede aplicar la funcion
